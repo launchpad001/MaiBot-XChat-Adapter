@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "version": "0.2.0",
+  "name": "XChat Adapter",
+  "description": "通过 X Chat API 接入 MaiBot 的加密私信适配器",
+  "author": {
+    "name": "启动台LaunchPad",
+    "url": "https://github.com/launchpad001"
+  },
+  "license": "GPL-3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/launchpad001/MaiBot-XChat-Adapter",
+    "documentation": "https://github.com/launchpad001/MaiBot-XChat-Adapter"
+  },
+  "plugin_type": "adapter",
+  "host_application": {
+    "min_version": "1.2.0",
+    "max_version": "1.3.99"
+  },
+  "sdk": {
+    "min_version": "2.5.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    { "type": "python_package", "name": "httpx", "version_spec": ">=0.27,<1" },
+    { "type": "python_package", "name": "chatxdk", "version_spec": ">=0.1.0" }
+  ],
+  "capabilities": [
+    "chat.open_session"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN", "en-US", "ja-JP", "ko-KR"]
+  },
+  "id": "top.launchpadx.maibot.xchat_adapter"
+}
